@@ -19,6 +19,7 @@ const SingleProduct = () => {
     zoomWidth: 500,
     img: "https://www.apple.com/v/apple-watch-se/k/images/meta/gps-lte__e6rpgo83mu4i_og.png",
   };
+  // eslint-disable-next-line
   const [orderedProduct, setOrderedProduct] = useState(true);
   const copyToClipboard = (text) => {
     console.log("text", text);
@@ -161,13 +162,13 @@ const SingleProduct = () => {
                 </div>
                 <div className="d-flex align-items-center gap-15">
                   <div>
-                    <a href="" className="review-link">
+                    <a href="/#" className="review-link">
                       <GoGitCompare className="fs-5 me-2" />
                       Add to Compare
                     </a>
                   </div>
                   <div>
-                    <a href="" className="review-link">
+                    <a href="/#" className="review-link">
                       <FcLike className="fs-5 me-2" />
                       Add to wishlist
                     </a>
@@ -191,7 +192,7 @@ const SingleProduct = () => {
                   </h3>
                   <a
                     className="review-link"
-                    href="javascript:void(0)"
+                    href="/#"
                     onClick={() => {
                       copyToClipboard(
                         "https://www.apple.com/v/apple-watch-se/k/images/meta/gps-lte__e6rpgo83mu4i_og.png"
@@ -242,7 +243,10 @@ const SingleProduct = () => {
                 </div>
                 {orderedProduct && (
                   <div>
-                    <a className="text-dark text-decoration-underline" href="">
+                    <a
+                      className="text-dark text-decoration-underline"
+                      href="/#"
+                    >
                       Write a Review
                     </a>
                   </div>
