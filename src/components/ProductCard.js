@@ -15,14 +15,14 @@ const ProductCard = (props) => {
     <>
       <div
         className={` ${
-          location.pathname === "/store" ? `gr-${grid}` : "col-3"
+          location.pathname === "/products" ? `gr-${grid}` : "col-3"
         } `}
       >
         <Link to=":id" className="product-card position-relative">
           <div className="wishlist-icon position-absolute">
-            <button className="border-0 bg-transpabutton">
+            <Link>
               <img src={wish} alt="wishlist" />
-            </button>
+            </Link>
           </div>
           <div className="product-image">
             <img src={watch1} className="img-fluid" alt="watch" />
@@ -65,7 +65,7 @@ const ProductCard = (props) => {
       </div>
       <div
         className={` ${
-          location.pathname === "/store" ? `gr-${grid}` : "col-3"
+          location.pathname === "/products" ? `gr-${grid}` : "col-3"
         } `}
       >
         <Link to=":id" className="product-card position-relative">
